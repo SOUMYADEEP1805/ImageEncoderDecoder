@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE ENCODER - DECODER</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">
+            IMAGE ENCODER - DECODER
+        </h1>
+        <br>
+        <br>
+        <div class="text-center">
+            <img src="https://gcdnb.pbrd.co/images/cqbulQZd6Vg3.png?o=1" width="200" height="300" class="rounded" alt="...">
+          </div>
+        <br>
+        <br>
+        <form action="/encode" method="post" enctype="multipart/form-data">
+            <div class="form-group container">
+            <label for="file">Upload File:</label>
+            <input class="form-control" type="file" name="file" id="" required>
+            </div>
+            
+            <div class="form-group container">
+                <button class="btn btn-danger btn-block">
+                    Encode Image
+                </button>
+            </div>
+        </form> 
+        
+
+    <form action="/decode" method="post" enctype="multipart/form-data">
+        <div class="form-group container">
+        <label for="file">Upload Base64 Code File:</label>
+        <input class="form-control" type="file" name="file" id="" required>
+        </div>
+        <div class="form-group container">
+            <button class="btn btn-danger btn-block">
+                Decode Image
+            </button>
+        </div>
+    </form>
+    </div> 
+</body>
+</html>
